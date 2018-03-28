@@ -1,5 +1,22 @@
 body {
-    background-image: url('maria-shanina-73289-unsplash.jpg');
+    background-image: url('backgroundimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+h1 {
+    padding-top: 30px;
+}
+
+#app {
+    background: #ff000017;
+    padding: 60px;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 html {
