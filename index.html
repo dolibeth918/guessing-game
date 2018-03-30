@@ -5,7 +5,9 @@
     <!--bootstrap link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
   </head>
   <body>
 
@@ -18,27 +20,29 @@
         </div>
 
         <div id='main'>
-          <div id='input-parent'>
-            <!-- Player's guess input, and submit button -->
-            <input id="player-input" placeholder="#" maxlength='3' autofocus=autofocus>
-            <button id="submit" class="btn btn-success">Go!</button>
+          <div class="input-parent-container">
+            <div id='input-parent'>
+              <!-- Player's guess input, and submit button -->
+              <input id="player-input" placeholder="#" maxlength='3' autofocus=autofocus>
+              <button id="submit" class="btn btn-success">Go!</button>
+            </div>
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
             <ul id='guess-list'>
-                <li id="guess">*</li>
-                <li id="guess">*</li>
-                <li id="guess">*</li>
-                <li id="guess">*</li>
-                <li id="guess">*</li>
+                <li id="guess">-</li>
+                <li id="guess">-</li>
+                <li id="guess">-</li>
+                <li id="guess">-</li>
+                <li id="guess">-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
-            <button id="reset" class="btn btn-warning">Reset</button>
-            <button id="hint" class="btn btn-info">Hint</button>
+            <button id="reset" class="btn btn-primary btn-lg">Reset</button>
+            <button id="hint" class="btn btn-info btn-lg">Hint</button>
           </div>
         </div>
       </div>

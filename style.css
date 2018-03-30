@@ -1,16 +1,21 @@
 body {
-    background-image: url('backgroundimg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(memphis-colorful.png) repeat 0 0;
 }
  
 h1 {
-    padding-top: 30px;
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 90px;
 }
+h1, h3 {
+    color: #17a2b8;
+    text-shadow: 2px 2px 2px #ccc;
+}
+ h3 {
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-size: 27px;
+ }
 
 #app {
-    background: #ff000017;
     padding: 60px;
 }
 
@@ -30,6 +35,10 @@ ul {
     list-style: none;
     padding: 0;
 }
+
+li {
+    color: #17a2b8;
+}
 img {
     display: inline;
     width: 200px;
@@ -37,17 +46,24 @@ img {
 }
 #footer {
     width: 100%;
-    border-top: solid 2px black;
-    background-color: white;
+    border-top: solid 2px #ffffff00;
+    background-color: #ffffffb3;
     position: fixed;
     bottom: 0;
 }
 #guess {
     display: inline;
     font-size: 60px;
-    border: 2px solid pink;
+    border-top: 5px solid #CA86AC;
+    border-left: 5px solid #CA86AC;
+    border-right: 5px solid #A85383;
+    border-bottom: 5px solid #A85383;
     padding: 0 25px;
     border-radius: 20px;
+}
+
+#guess-list {
+    padding: 20px;
 }
 
 #player-input {
@@ -58,10 +74,16 @@ img {
     font-size: 60px;
 }
 
+.input-parent-container {
+    padding: 30px;
+}
+
 #input-parent {
     position: relative;
     width: 160px;
     margin: 5% auto 50px;
+    box-shadow: 0 0 1em 1em #ccc;
+    border-radius: 50%;
 }
 
 #submit {
