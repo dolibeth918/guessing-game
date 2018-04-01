@@ -3,20 +3,20 @@ body {
 }
  
 h1 {
-    font-family: 'Dancing Script', Georgia, Times, serif;
-    font-size: 90px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 72px;
 }
 h1, h3 {
-    color: #17a2b8;
+    color: #5F7D85;
     text-shadow: 2px 2px 2px #ccc;
 }
  h3 {
-    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-family: 'ABeeZee', sans-serif;
     font-size: 27px;
  }
 
 #app {
-    padding: 60px;
+    padding: 10px;
 }
 
 body, html {
@@ -37,7 +37,7 @@ ul {
 }
 
 li {
-    color: #17a2b8;
+    color: #5F7D85;
 }
 img {
     display: inline;
@@ -50,14 +50,16 @@ img {
     background-color: #ffffffb3;
     position: fixed;
     bottom: 0;
+    font-family: 'ABeeZee', sans-serif;
+    color: #373737;
 }
 #guess {
     display: inline;
     font-size: 60px;
-    border-top: 5px solid #CA86AC;
-    border-left: 5px solid #CA86AC;
-    border-right: 5px solid #A85383;
-    border-bottom: 5px solid #A85383;
+    border-top: 5px solid #F9D4CE;
+    border-left: 5px solid #F9D4CE;
+    border-right: 5px solid #D6A097;
+    border-bottom: 5px solid #D6A097;
     padding: 0 25px;
     border-radius: 20px;
 }
