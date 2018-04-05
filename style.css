@@ -4,7 +4,7 @@ body {
  
 h1 {
     font-family: 'Fredoka One', cursive;
-    font-size: 72px;
+    font-size: 5.9vw;
 }
 h1, h3 {
     color: #5F7D85;
@@ -12,11 +12,12 @@ h1, h3 {
 }
  h3 {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 27px;
+    font-size: 2.0vw;
  }
 
 #app {
     padding: 10px;
+    margin-bottom: 200px;
 }
 
 body, html {
@@ -55,7 +56,7 @@ img {
 }
 #guess {
     display: inline;
-    font-size: 60px;
+    font-size: 6vmin;
     border-top: 5px solid #F9D4CE;
     border-left: 5px solid #F9D4CE;
     border-right: 5px solid #D6A097;

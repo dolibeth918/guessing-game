@@ -11,48 +11,46 @@
   </head>
   <body>
 
-      <div id='app' class="center container">
+    <div id='app' class="center container">
 
-        <div id='headers'>
-          <!-- Title and subtitles! -->
-          <h1 id="title">guessing game</h1>
-          <h3 id="subtitle">guess a number between 1 and 100</h3>
-        </div>
-
-        <div id='main'>
-          <div class="input-parent-container">
-            <div id='input-parent'>
-              <!-- Player's guess input, and submit button -->
-              <input id="player-input" placeholder="#" maxlength='3' autofocus=autofocus>
-              <button id="submit" class="btn btn-success">go!</button>
-            </div>
-          </div>
-
-          <div id='guesses'>
-            <!-- unordered list of guesses -->
-            <ul id='guess-list'>
-                <li id="guess">-</li>
-                <li id="guess">-</li>
-                <li id="guess">-</li>
-                <li id="guess">-</li>
-                <li id="guess">-</li>
-            </ul>
-          </div>
-
-          <div id="menu-btns">
-            <!-- reset and hint buttons -->
-            <button id="reset" class="btn btn-primary btn-lg">reset</button>
-            <button id="hint" class="btn btn-info btn-lg">hint</button>
-          </div>
-        </div>
+      <div id='headers'>
+        <!-- Title and subtitles! -->
+        <h1 id="title">guessing game</h1>
+        <h3 id="subtitle">guess a number between 1 and 100</h3>
       </div>
 
+      <div id='main'>
+        <div class="input-parent-container">
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id="player-input" placeholder="#" maxlength='3' autofocus=autofocus>
+            <button id="submit" class="btn btn-success">go!</button>
+          </div>
+        </div>
 
+        <div id='guesses'>
+          <!-- unordered list of guesses -->
+          <ul id='guess-list'>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+          </ul>
+        </div>
+
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button id="reset" class="btn btn-primary btn-lg">reset</button>
+          <button id="hint" class="btn btn-info btn-lg">hint</button>
+        </div>
+      </div>
+    </div><!--app-->
 
     <div id='footer' class="center">
       <div class="row">
         <div class='col-md-4'>
-          <img class="img-fluid"src='faLogo.png'></img>
+          <img class="img-fluid"src='faLogo.png'>
         </div>
 
         <div class='col-md-4'>
@@ -60,14 +58,11 @@
         </div>
 
         <div class='col-md-4'>
-          <img class="img-fluid" src='graceHopperLogo.png'></img>
+          <img class="img-fluid" src='graceHopperLogo.png'>
         </div>
-
-
-      </div>
-  </div>
-
-
-
+      </div><!--row-->
+    </div><!--footer-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="GuessingGame-Part2/GuessingGame.js"></script>
   </body>
 </html>
