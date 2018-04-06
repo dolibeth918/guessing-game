@@ -38,6 +38,7 @@ Game.prototype.playersGuessSubmission = function(guess) {
 
 Game.prototype.checkGuess = function(){
     if (this.playersGuess == this.winningNumber){
+
         return "You Win!";
         // if playersGuess is in pastGuesses
     } else if (this.pastGuesses.indexOf(this.playersGuess) > -1){
@@ -49,7 +50,7 @@ Game.prototype.checkGuess = function(){
     }
     let diff = this.difference(); 
     if (diff < 10){
-        return "You\'re burning up!"
+        return "You\'re burning up!";
     }
     if (diff < 25){
         return "You\'re lukewarm.";
@@ -101,21 +102,28 @@ const giveHint = function(hintArr){
     $("#subtitle").text('');
 }
 
+const fillList = function(game){
+    $("#guess-list li:nth-child(" + game.pastGuesses.length + ")").text(game.playersGuess);
+}
+
 const changeTitle = function(ans, game){
     $title = $("#title");
     if (ans === "You have already guessed that number."){
         $title.text('guess again!');
+        fillList(game);
+        disableButtons();
     } else if (ans === "You Win!"){
         $title.text('YOU WIN!');
         disableButtons();
     } else if (ans === "You Lose."){
         $title.text('you lose.');
+        fillList(game);
         disableButtons();
     } else {
     // If the player's guess isn't a duplicate, add the guess to the 
     // #guesses 'ul' element so the user can see what guesses they have already submitted.
         $title.text(ans);
-        $("#guess-list li:nth-child(" + game.pastGuesses.length + ")").text(game.playersGuess);
+        fillList(game);
         if (game.isLower()){
             $('#subtitle').text('guess higher');
         } else {
