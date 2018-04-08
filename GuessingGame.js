@@ -38,7 +38,7 @@ Game.prototype.playersGuessSubmission = function(guess) {
 
 Game.prototype.checkGuess = function(){
     if (this.playersGuess == this.winningNumber){
-
+        this.pastGuesses.push(this.playersGuess)
         return "You Win!";
         // if playersGuess is in pastGuesses
     } else if (this.pastGuesses.indexOf(this.playersGuess) > -1){
@@ -85,8 +85,8 @@ const enterGuess = function(game){
 }
 
 const disableButtons = function(){
-    $("#reset").addClass("disabled");
-    $("#hint").addClass("disabled");
+    $("#reset").attr("disabled", "disabled");
+    $("#hint").attr("disabled", "disabled");
     $('#subtitle').text('');
 }
 
@@ -114,6 +114,7 @@ const changeTitle = function(ans, game){
         disableButtons();
     } else if (ans === "You Win!"){
         $title.text('YOU WIN!');
+        fillList(game);
         disableButtons();
     } else if (ans === "You Lose."){
         $title.text('you lose.');
